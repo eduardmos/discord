@@ -227,7 +227,7 @@ header {
 
 .contenedor-seccion {
     display: flex;
-    white-space: pre-line;
+    
     width: 80%;
     margin: auto;
     align-items: center;
@@ -261,6 +261,7 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-around;
+    width: 86%;
 }
 
 /*---------------- seccion cuatro -----------------*/
@@ -428,7 +429,12 @@ footer li {
     border: none;
 }
 
-/*<----------MOBILE---------------->*/
+.contenedor-links-footer{
+    display: flex;
+    gap: 50px;
+}
+
+/*<----------MOBILE-------------------------------------------------->*/
 
 
 @media only screen and (min-width:350px) and (max-width:480px){
@@ -451,6 +457,7 @@ nav{
     .btn-nav img{
         display: block;
     }
+
 /*<----------header---------------->*/ 
 
 header{
@@ -509,5 +516,53 @@ margin: 0px -30px;
 }
 .imagen-header-derecha{
     display: none;
+}
+
+/*<----------MAIN---------------->*/ 
+.contenedor-seccion{
+flex-direction: column;
+width: 100%;
+}
+.contenedor-seccion h2{
+    font-size: 28px;
+    padding-top: 10px;
+
+}
+.contenedor-seccion p {
+    font-size: 16px;
+}
+.contenedor-seccion-img{
+    order: 0;
+    
+}
+.contenedor-seccion-texto{
+    order:1;
+}
+.seccion-tres{
+    background-color: #ffffff;
+
+}
+.seccion-cuatro h2{
+    font-size: 34px;
+
+}
+.seccion-cuatro p{
+    font-size: 18px;
+}
+/*<----------FOOTER---------------->*/ 
+
+.contenedor-arriba-footer{
+    flex-direction: column;
+}
+
+.contenedor-links-footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+.lista-links{
+    width: 45%;
 }
 }
